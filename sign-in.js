@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("form").submit(function(e) {
         e.preventDefault();
         $.ajax({
-            url: "https://178.154.255.209:3005/user",
+            url: "http+://178.154.255.209:3005/user",
             type: "get",
             header: {
                 'Idempotence-Key': 12
