@@ -158,8 +158,9 @@ section#settings {
 
 .bio-tab {
     background: #fff;
-    box-shadow: 0 20px 50px 6px #0000001a;
+    box-shadow: 0 50px 50px 3px #0000001c;
     padding: 30px 50px;
+    border-radius: 1rem;
 }
 
 .user-id {
@@ -168,7 +169,7 @@ section#settings {
     padding: 6px 8px;
     background-color: #fbfbfb;
     border-radius: 0.3rem;
-    font-weight: 900;
+    font-weight: 700;
     display: inline-block;
 }
 
@@ -203,8 +204,7 @@ section#settings {
 .about-user {
     padding-left: 10px;
     border-left: 10px solid #eee;
-    margin-left: 5px;
-    margin-top: 20px;
+    margin: 20px 0 25px 5px;
 }
 
 .about-user .birth-date {
@@ -242,7 +242,7 @@ section#settings {
 }
 
 .tags-user {
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .tags-user span {
