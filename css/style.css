@@ -1,19 +1,28 @@
 @import url('circe.css');
 @import url('lato.css');
-
-
 html {
-	font-size: 16px;
+    font-size: 16px;
 }
+
 body {
-	font-size:1rem;
-	font-family: 'Lato', Roboto, sans-serif;
-	color: #222;
-	background: #fffefe;
+    font-size: 1rem;
+    font-family: 'Lato', Roboto, sans-serif;
+    color: #222;
+    background: #fffefe;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Circe', Montserrat, sans-serif;
-	font-weight: 900;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Circe', Montserrat, sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 a {
@@ -25,12 +34,43 @@ a:hover {
     color: #4f9e55;
 }
 
+section {
+    padding: 90px 0;
+}
+
+.section-title h2 {
+    color: #297d53;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+}
+
+div#notation div {
+    font-size: 1.5rem;
+    font-family: 'Circe', sans-serif;
+    line-height: 2.5;
+}
+
+div#notation span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+    border-radius: 50%;
+}
+
+
 /* Sign In */
+
 #center-form-section {
     padding: 80px 0;
     min-height: 90vh;
     display: flex;
 }
+
 .form-control:focus {
     color: rgb(26, 26, 26);
     font-weight: 600;
@@ -39,9 +79,11 @@ a:hover {
     outline: 0px;
     box-shadow: rgba(182, 220, 173, 0.24) 0px 0px 0px 0.2rem;
 }
+
 .sign-in-social h4 {
     font-weight: 400;
 }
+
 .sign-in-btns a {
     color: #222;
     font-family: 'Circe', sans-serif;
@@ -53,20 +95,29 @@ a:hover {
     line-height: 25px;
     width: 100%;
 }
+
+.sign-in-btns a:hover {
+    background: #e8e8e8;
+}
+
 .sign-in-btns img {
     margin-right: 5px;
     width: 20px;
 }
+
 .sign-in-btns .col-6 {
     padding: 4px;
 }
-.form-sign-in, .form-sign-up {
+
+.form-sign-in,
+.form-sign-up {
     padding-left: 30px;
     padding-right: 30px;
 }
 
 
 /* Buttons */
+
 .btn-primary {
     background: #61b968;
     color: #ffffff;
@@ -77,17 +128,175 @@ a:hover {
     transition: .3s;
     font-size: 1.1rem;
 }
+
 .btn-primary:hover {
     background: #4f9e55;
     box-shadow: 0 5px 10px 0px #00000014;
-}
-.btn-primary:focus, .btn-primary:active {
-    background-color: #85cd8b !important;
-    border: 0  !important;
-    box-shadow: none  !important;
+    transform: translateY(-3px);
 }
 
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #85cd8b !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* Personal Area */
+
+section#settings {
+    margin-top: 80px;
+    background-image: url(../img/m.svg);
+    background-size: cover;
+    background-position: top;
+}
+
+.user-avatar .image img {
+    border-radius: 50%;
+}
+
+.bio-tab {
+    background: #fff;
+    box-shadow: 0 20px 50px 6px #0000001a;
+    padding: 30px 50px;
+}
+
+.user-id {
+    color: #76d87e;
+    font-family: 'Lato', sans-serif;
+    padding: 6px 8px;
+    background-color: #fbfbfb;
+    border-radius: 0.3rem;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.user-id span {
+    color: #444;
+    font-weight: 400;
+    font-family: 'Circe', Montserrat, sans-serif;
+}
+
+.user-status {
+    display: inline-block;
+    margin-left: 15px;
+    color: #76d87e;
+    font-family: 'Circe', Montserrat, sans-serif;
+    padding: 6px 8px;
+    background-color: #fbfbfb;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.75px;
+}
+
+.status-id {
+    margin: 5px 0 25px;
+}
+
+.user-name {
+    font-size: 3rem;
+    color: #297d53;
+}
+
+.about-user {
+    padding-left: 10px;
+    border-left: 10px solid #eee;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.about-user .birth-date {
+    font-size: 1.4rem;
+    font-family: 'Circe', Montserrat, sans-serif;
+    color: #76d87e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-user .location-user {
+    font-size: 1.4rem;
+    font-family: 'Circe', Montserrat, sans-serif;
+    color: #76d87e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.location-user #district {
+    color: #585858;
+    margin-left: 5px;
+}
+
+.about-user .university-user {
+    font-size: 1.4rem;
+    font-family: 'Circe', Montserrat, sans-serif;
+    color: #76d87e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.university-user #university-direction {
+    color: #585858;
+    margin-left: 5px;
+}
+
+.tags-user {
+    margin-top: 25px;
+}
+
+.tags-user span {
+    display: inline-block;
+    background: #c7e7b6;
+    color: #297d53;
+    font-weight: bold;
+    font-family: 'Circe', Montserrat, sans-serif;
+    font-size: 0.9rem;
+    padding: 6px 8px;
+    margin: 3px;
+    opacity: .7;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tags-user span:hover {
+    opacity: 1;
+}
+
+.user-avatar .image {
+    position: relative;
+}
+
+.user-avatar .image:after {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    width: 130%;
+    height: 130%;
+    background-image: url(../img/layer.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: rotation;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* footer */
+
 .footer-logo {
     width: 110px;
 }
