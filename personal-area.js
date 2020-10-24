@@ -11,11 +11,18 @@ $(document).ready(function() {
             success: function(data){
               console.log("test success");
               console.log("data = ", data);
-              $("#name").text(data.name+" "+data.surname);
-              let user = (data.role == "user")?"Участник":"Спикер";
-              $("#user").text(user);          
-
-              
+              $("#name").text(data.name+" "+data.surname); 
+              switch (data.role) {
+                case "user":
+                  user = "Участник";
+                  break;
+                case "speaker":
+                  user ="Спикер"
+               break;
+                default:
+                  console.log(`Sorry, we are out of ${expr}.`);
+              }
+              $("#user").text(user); 
             },
             error: function(xhr, status, error) {
               console.log("test error");

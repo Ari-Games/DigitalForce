@@ -1,4 +1,9 @@
+
 $(document).ready(function() {    
+  if(localStorage.getItem("jwt") != null){
+    var url = "personal-area.html";
+    $(location).attr('href',url);
+  }
     $("form").submit(function(e) {
         e.preventDefault();
       var name1 = $("#name").val();
@@ -39,10 +44,12 @@ $(document).ready(function() {
                   }
 
                 },
-                success:function(data1){
-                    console.log(data1);
-                    localStorage.setItem("jwt",data1.jwt);
-                    
+                success:function(response){
+                    console.log(response);
+                    localStorage.setItem("jwt",response.jwt);
+                    //TODO перенаправить на personal-arear
+                    var url = "personal-area.html";
+                    $(location).attr('href',url);
                 },
                 error:function() {
                   

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <!-- Add this after vue.js -->
+    <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+</head>
+<body>
+  <div class="wrap bg-light" id="center-form-section">
+    <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-6 m-auto">
+        <div class="row">
+            <form class="form-sign-in col-12 col-sm-6 text-center" id="form-admin">
+                <h3 class="font-weight-bold mb-4">Войти админ</h3>
+                <div class="form-group mb-2">
+                  <input type="login" class="form-control" id="login" name="login" placeholder="Логин">
+                </div>
+                <div class="form-group mb-4">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Пароль">
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block btn-shadow-1" type="submit">Войти</button>
+
+             </form>
+             
+        </div>
+        
+    </div>
+  </div>
+  <footer class="bg-dark-green text-center m-0 p-5">
+    <div class="mb-2"><a href="index.html"><img class="footer-logo" src="img/logo.svg" alt=""></a></div>
+    <a href="index.html">На главную</a>
+  </footer>
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+      $(document).ready(function() {
+        if(localStorage.getItem("admin-jwt")!=null){x
+            var url = "admin-panel.html";
+                    $(location).attr('href',url);
+        }
+            $("#form-admin").submit(function(e) {
+                let login1 = $("#login").val();
+                let password1 = $("#password").val();
+        
+                console.log(login1);
+                console.log(password1);
+                e.preventDefault();
+                $.ajax({
+                url:"http://178.154.255.209:3005/superuser_token",
+                type:"post",
+                data:{
+                    auth:{
+                    login:login1,
+                    password:password1
+                    }
+
+                },
+                success:function(data1){
+                    console.log(data1);
+                    localStorage.setItem("admin-jwt",data1.jwt);
+                    var url = "admin-panel.html";
+                    $(location).attr('href',url);
+                
+                },
+                error:function() {
+                    
+                }
+                })
+            }); 
+        });
+  </script>
+</body>
+</html>

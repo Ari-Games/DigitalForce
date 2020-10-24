@@ -16,7 +16,7 @@ $(document).ready(function() {
           success:function(data1){
               console.log(data1);
               localStorage.setItem("jwt",data1.jwt);
-              Window
+          
           },
           error:function() {
             
