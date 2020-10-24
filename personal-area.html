@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <!-- Add this after vue.js -->
+    <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+</head>
+<body>
+    <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3 fixed-top">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+               <img class="logo" src="img/logo.png" alt="">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">О проекте</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Тесты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="index.html#cpp">C++</a>
+                           <a class="dropdown-item" href="index.html#csharp">C#</a>
+                           <a class="dropdown-item" href="index.html#js">JavaScript</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#rating">Рейтинг</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <a href="index.html" class="btn btn-outline-success my-2 my-sm-0">Главная</a>
+                  </form>
+               </div>
+            </div>
+         </nav>
+      </header>
+</body>
+</html>

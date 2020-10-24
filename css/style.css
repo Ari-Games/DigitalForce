@@ -1,0 +1,62 @@
+@import url('circe.css');
+@import url('lato.css');
+
+
+html {
+	font-size: 16px;
+}
+body {
+	font-size:1rem;
+	font-family: 'Lato', Roboto, sans-serif;
+	color: #222;
+	background: #fffefe;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Circe', Montserrat, sans-serif;
+	font-weight: 900;
+}
+
+a {
+    color: #61b968;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4f9e55;
+}
+
+/* Sign In */
+#center-form-section {
+    padding: 80px 0;
+    min-height: 90vh;
+    display: flex;
+}
+.form-control:focus {
+    color: rgb(26, 26, 26);
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(182, 220, 173);
+    outline: 0px;
+    box-shadow: rgba(182, 220, 173, 0.24) 0px 0px 0px 0.2rem;
+}
+
+
+/* Buttons */
+.btn-primary {
+    background: #61b968;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-primary:hover {
+    background: #4f9e55;
+    box-shadow: 0 5px 10px 0px #00000014;
+}
+.btn-primary:focus, .btn-primary:active {
+    background-color: #85cd8b !important;
+    border: 0  !important;
+    box-shadow: none  !important;
+}

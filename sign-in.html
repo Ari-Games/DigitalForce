@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <!-- Add this after vue.js -->
+    <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+</head>
+<body>
+  <div class="wrap bg-light" id="center-form-section">
+    <form class="form-sign-in col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2 m-auto text-center">
+      <img class="mb-5" src="img/logo.png" width="150" alt="">
+      <h3 class="h3 font-weight-bold mb-4">Авторизация</h3>
+      <div class="form-group mb-2">
+        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
+      </div>
+      <div class="form-group mb-4">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Пароль">
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
+      <div class="form-group mt-4">
+        Нет аккаунта? <a href="sign-up.html">Зарегистрироваться</a>
+      </div>
+   </form>
+  </div>
+  <footer class="bg-dark-green text-center m-0 p-5">
+    <a href="index.html"><img src="img/logo.png" alt=""></a>
+  </footer>
+</body>
+</html>
