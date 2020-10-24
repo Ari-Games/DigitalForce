@@ -11,7 +11,10 @@ $(document).ready(function() {
             success: function(data){
               console.log("test success");
               console.log("data = ", data);
-              $("#name").val() = 
+              $("#name").text(data.name+" "+data.surname);
+              let user = (data.role == "user")?"Участник":"Спикер";
+              $("#user").text(user);          
+
               
             },
             error: function(xhr, status, error) {
