@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="lid.svg"
+   id="svg857"
+   version="1.1"
+   viewBox="0 0 102 97"
+   height="97"
+   width="102">
+  <metadata
+     id="metadata861">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="Artboard-2"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="73.5"
+     inkscape:cx="339.5"
+     inkscape:zoom="1.3564065"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview859"
+     inkscape:window-height="838"
+     inkscape:window-width="1600"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs848" />
+  <g
+     fill-rule="evenodd"
+     fill="none"
+     stroke-width="1"
+     stroke="none"
+     id="Artboard-2">
+    <g
+       transform="translate(-1.33116,-0.67100977)"
+       id="g871">
+      <polygon
+         points="533,0 533,97 550,97 550,0 "
+         fill="#0099aa"
+         id="Fill-7"
+         transform="translate(-531.66884,0.67100977)" />
+      <path
+         fill="#0099aa"
+         id="Fill-8"
+         d="M 80.252352,0.67100977 H 30.331162 V 97.67101 h 49.92119 L 103.33116,74.168622 V 24.17471 Z M 47.177312,83.4063 h 42.11539 V 17.788657 h -42.11539 z" />
+      <polygon
+         points="635,22.529671 618,6 618,14.640417 618,91 635,74.470329 "
+         fill="#00696d"
+         id="Fill-9"
+         transform="translate(-531.66884,0.67100977)" />
+    </g>
+  </g>
+</svg>

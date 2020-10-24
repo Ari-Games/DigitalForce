@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <!-- Add this after vue.js -->
+    <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+</head>
+<body>
+  <div class="wrap bg-light" id="center-form-section">
+    <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-6 m-auto">
+        <div class="row">
+            <form class="form-sign-up col-12 col-sm-6 text-center">
+                <h3 class="font-weight-bold mb-4">Регистрация</h3>
+                <div class="form-group mb-2">
+                  <input type="text" class="form-control" id="surname" name="surname" placeholder="Фамилия">
+                </div>
+                <div class="form-group mb-2">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Имя">
+                </div>
+                <div class="form-group mb-2">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Электронная почта">
+                </div>
+                <div class="form-group mb-2">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Пароль">
+                </div>
+                <div class="form-group mb-4">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Подтвердите пароль">
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Зарегистрироваться</button>
+                <div class="form-group mt-3">
+                    <a href="sign-in.html">Уже есть аккаунт?</a>
+                </div>
+             </form>
+             <div class="col-12 col-sm-6 sign-in-social">
+                 <h4>Вход через сервисы</h4>
+                 <div class="sign-in-btns mt-4 row">
+                    <div class="col-6">
+                        <a id="vk-sign-in" class=""><img src="img/social-logo/vk.svg"> Вконтакте</a>
+                    </div>
+                    <div class="col-6">
+                        <a id="fb-sign-in" class=""><img src="img/social-logo/fb.svg"> Facebook</a>
+                    </div>
+                    <div class="col-6">
+                        <a id="ok-sign-in" class=""><img src="img/social-logo/ok.svg"> Одноклассники</a>
+                    </div>
+                    <div class="col-6">
+                        <a id="lid-sign-in" class=""><img src="img/social-logo/lid.svg"> Leader-ID</a>
+                    </div>
+                    <div class="col-6">
+                        <a id="rm-sign-in" class=""><img src="img/social-logo/rm.svg"> Росмолодежь</a>
+                    </div>
+                    <div class="col-6">
+                        <a id="rm-sign-in" class=""><img style="width: 40px;" src="img/social-logo/rsv.svg"> РСВ</a>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        
+    </div>
+  </div>
+  <footer class="bg-dark-green text-center m-0 p-5">
+    <div class="mb-2"><a href="index.html"><img class="footer-logo" src="img/logo.svg" alt=""></a></div>
+    <a href="index.html">На главную</a>
+  </footer>
+</body>
+</html>
