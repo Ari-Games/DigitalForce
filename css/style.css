@@ -294,6 +294,140 @@ section#settings {
     }
 }
 
+/* Event Page */
+
+section#live {
+    background-image: url(../img/m.svg);
+    background-size: cover;
+    background-position: top;
+    padding: 90px 0 40px;
+}
+
+.video-frame {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 50px 50px 3px #0000001c;
+}
+
+.video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+}
+
+.event-name {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.event-date span {
+    color: #76d87e;
+    font-family: 'Circe', sans-serif;
+    padding: 6px 8px;
+    background-color: #fbfbfb;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.event-location {
+    margin-top: 10px;
+}
+
+.event-location #city {
+    font-size: 1.4rem;
+    font-family: 'Circe', sans-serif;
+    padding: 6px 8px;
+    background-color: #fbfbfb;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.event-location #address {
+    font-family: 'Circe', sans-serif;
+    padding: 6px 8px;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.event-description {
+    margin-top: 15px;
+    margin-left: 2px;
+    max-width: 85%;
+}
+
+.media img {
+    max-width: 160px;
+    border-radius: 50%;
+}
+
+#speaker-link {
+    color: #76d87e;
+}
+
+.speaker-info {
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 8px 20px #00000017;
+    border-radius: 3rem;
+}
+
+.speaker-title {
+    color: #76d87e;
+    font-family: 'Circe', sans-serif;
+    padding: 6px 8px;
+    background-color: #fbfbfb;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0 6px;
+    position: relative;
+    right: 4px;
+}
+
+.event-btns {
+    margin-top: 30px;
+    width: 85%;
+}
+
+.event-btns a {
+    color: #222;
+    font-family: 'Circe', sans-serif;
+    padding: 15px 20px;
+    background: #eee;
+    display: inline-block;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    line-height: 25px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.event-btns a:hover {
+    background: #e7e7e7;
+}
+
+.event-btns img {
+    margin-right: 10px;
+    width: 25px;
+    margin-top: -5px;
+}
+
+.event-btns .col-6 {
+    padding: 15px;
+}
+
 
 /* footer */
 
