@@ -6,28 +6,61 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    <div id="app">
-        <h2>Advice of the day</h2>
-        <p>{{advice}}</p>
+  <div id="app">
+    <h3>Write a new post</h3>
+    <form>
+    <div>
+    <label>Title of your post:</label>
+    <input type="text" v-model="title">
     </div>
+    <div>
+    <label>Write your thoughts for the day</label>
+    <textarea v-model="body"></textarea>
+    </div>
+    <div>
+    <button @click.prevent="submit">Submit</button>
+    </div>
+    </form>
+	<h3>Response from the server</h3>
+    <pre >{{response}}</pre>
+    </div>
+    
     
   <script>
  new Vue({
-el: '#app',
-data: {
-advice: 'loading...'
+  el: '#app',
+  data: {
+  userId: 1,
+  title: '',
+  body: '',
+  response: '...'
 },
-created () {
-  //axios.get('http://178.154.255.209:3005/user_token')
-axios.get('https://api.adviceslip.com/advice') // http://178.154.255.209:3005/user_token
-.then(response => {
-this.advice = response;
-})
-.catch(error => {
-this.advice = 'There was an error: ' + error.message
-})
+methods: {
+  submit () {
+    const xhr = new XMLHttpRequest()
+    xhr.open('post', 'https://jsonplaceholder.typicode.com/posts')
+    xhr.setRequestHeader('Content-Type','application/json;charset=UTF-8')
+    xhr.onreadystatechange = () => {
+    const DONE = 4
+    const CREATED = 201
+    if (xhr.readyState === DONE) {
+      if (xhr.status === CREATED) {
+        this.response = xhr.response
+      } 
+      else {
+        this.response = 'Error: ' + xhr.status
+      }
+    }
+    }
+    xhr.send(JSON.stringify({
+      title: this.title,
+      body: this.body,
+      userId: this.userId
+    }))
+  }
 }
-})
+});
+
   </script>
 </body>
 </html>
