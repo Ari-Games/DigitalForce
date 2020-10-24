@@ -30,10 +30,14 @@
  new Vue({
   el: '#app',
   data: {
-  userId: 1,
-  title: '',
-  body: '',
-  response: '...'
+  name :'',
+  surname:'',
+  second_name:'',
+  email:'',
+  password:'',
+  phone_number:'',
+  description:'',
+  
 },
 methods: {
   submit () {
@@ -53,9 +57,13 @@ methods: {
     }
     }
     xhr.send(JSON.stringify({
-      title: this.title,
-      body: this.body,
-      userId: this.userId
+      name :this.name,
+      surname:this.surname,
+      second_name:this.second_name,
+      email:this.email,
+      password:this.password,
+      phone_number:this.phone_number,
+      description:this.description,
     }))
   }
 }
