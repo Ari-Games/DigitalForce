@@ -1,21 +1,26 @@
 $(document).ready(function() {
+  var email1 = $("#email").val();
+  var password1 = $("#password").val();
     $("form").submit(function(e) {
         e.preventDefault();
         $.ajax({
-            url: "http+://178.154.255.209:3005/user",
-            type: "get",
-            header: {
-                'Idempotence-Key': 12
-            },
-            success: function(data){
-              console.log("test success");
-              console.log("data = ", data);
-              
-            },
-            error: function(xhr, status, error) {
-              console.log("test error");
-              console.log(xhr, status, error);
+          url:"http://178.154.255.209:3005/user_token",
+          type:"post",
+          data:{
+            auth:{
+              email:email1,
+              password:password1
             }
-          });
+
+          },
+          success:function(data1){
+              console.log(data1);
+              localStorage.setItem("jwt",data1.jwt);
+              Window
+          },
+          error:function() {
+            
+          }
+        })
     }); 
 });

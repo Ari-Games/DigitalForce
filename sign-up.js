@@ -41,7 +41,7 @@ $(document).ready(function() {
                 },
                 success:function(data1){
                     console.log(data1);
-                    localStorage.setItem(data1.jwt);
+                    localStorage.setItem("jwt",data1.jwt);
                     
                 },
                 error:function() {
