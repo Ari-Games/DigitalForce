@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>Advice of the day</h2>
+        <p>{{advice}}</p>
+    </div>
+    
+  <script>
+ new Vue({
+el: '#app',
+data: {
+advice: 'loading...'
+},
+created () {
+  //axios.get('http://178.154.255.209:3005/user_token')
+axios.get('https://api.adviceslip.com/advice') // http://178.154.255.209:3005/user_token
+.then(response => {
+this.advice = response.data.slip.advice;
+})
+.catch(error => {
+this.advice = 'There was an error: ' + error.message
+})
+}
+})
+  </script>
+</body>
+</html>
