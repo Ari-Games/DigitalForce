@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  localStorage.clear();
+  if(localStorage.getItem("jwt") != null){
+    var url = "personal-area.html";
+    $(location).attr('href',url);
+  }
   var email1 = $("#email").val();
   var password1 = $("#password").val();
     $("form").submit(function(e) {
@@ -15,11 +20,13 @@ $(document).ready(function() {
           },
           success:function(data1){
               console.log(data1);
-              localStorage.setItem("jwt",data1.jwt);
-          
+              localStorage.setItem("jwt",data1.jwt);              
+                var url = "personal-area.html";
+                $(location).attr('href',url);
+
           },
           error:function() {
-            
+            localStorage.removeItem("jwt");
           }
         })
     }); 
