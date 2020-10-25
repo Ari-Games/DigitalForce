@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  localStorage.clear();
+
   if(localStorage.getItem("jwt") != null){
     var url = "personal-area.html";
     $(location).attr('href',url);
