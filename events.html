@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <title>Каталог мероприятий</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Мероприятия</title>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-2 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-2">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo" src="img/logo.svg" alt="">
@@ -36,9 +38,44 @@
             </div>
         </nav>
     </header>
-    
-    
+
+    <section id="head-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <h1>Мероприятия</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="event-card">
+                        <a style="background-image: url('img/events/1.jpeg');" class="event-image event-link">
+                            <div class="event-date">27.10.20</div>
+                            <div class="event-time">13:30</div>
+                            <div class="event-location">Ростов-на-Дону</div>
+                        </a>
+                        <div class="event-info">
+                            <a class="event-name event-link">9 инструментов для группового взаимодействия от Школы тренеров и модераторов</a>
+                            <a class="event-btn event-condition1"><img src="img/check.svg">Идет регистрация</a>
+                            <a class="event-btn event-condition2"><img src="img/live.svg">Прямой эфир</a>
+                            <a class="event-btn event-condition3"><img src="img/diskette.svg">Итоги</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('')
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница мероприятия</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-2">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#settings">Профиль</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#rating">Рейтинг</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#events">Мероприятия</a>
+                        </li>
+                    </ul>
+                    <div class="my-2 my-lg-0">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="live">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="row">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/o1XKqGih80U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <h2 class="event-name">9 инструментов для группового взаимодействия от Школы тренеров и модераторов</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="description">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="event-info">
+                        <div class="event-date">
+                            <span id="date">27.10.2020</span>
+                            <span id="time">13:30</span> 
+                        </div>
+                        <div class="event-location">
+                            <div id="city">Ростова-на-Дону</div>
+                            <div id="address">ул. Красноармейская, д. 23</div>
+                        </div>
+                        <div class="event-description">
+                            Как познакомить, сплотить, подружить группу девятью разными способами? Вместе с Колей из Тамбова, Даней из Москвы, Тиграном из Ростова-на-Дону и Кириллом Александровичем из Санкт-Петербурга собрали первый в истории Мастерской управления «Сенеж» модераторский подкаст. Ребята попали в «Сенеж» благодаря своей активности на форуме «Территория смыслов», сегодня они проходят обучение в «Школе тренеров и модераторов». 
+                        </div>
+                        <div class="event-btns">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a id="add-event"><img src="img/check.svg"> Записаться</a>
+                                </div>
+                                <div class="col-6">
+                                    <a id="add-bookmark"><img src="img/like.svg"> В Избранное</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="speaker-info">
+                        <div class="media">
+                            <img src="img/komisarov.jpeg" class="mr-3 avatar-speaker">
+                            <div class="align-self-center media-body">
+                              <span class="speaker-title">Спикер</span>  
+                              <h5 id="speaker-name" class="mt-0">Алексей Комиссаров</h5>
+                              <div id="speaker-description" class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                              <a href="#" id="speaker-link">Перейти в профиль</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 50px;" id="rating-user">
+        <div class="section-title text-center">
+            <h2>Обратная связь</h2>
+            <p>Комментарии и вопросы</p>
+        </div>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-12 m-auto">
+                    <img src="img/chat.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
