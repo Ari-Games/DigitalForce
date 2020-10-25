@@ -6,12 +6,12 @@ $(document).ready(function() {
         var fd = new FormData;
     
         fd.append('event[picture]', $input.prop('files')[0]);
-        fd.append("event[tag]",$("#tag").val());
+        fd.append("event[location]",$("#location").val());
         fd.append("event[name]",$("#name").val());
         fd.append("event[description]",$("#description").val());
         fd.append("event[time]",$("#time").val());
         fd.append("event[date]",$("#date").val());
-        fd.append("event[user_id]",1);
+        fd.append("event[user_id]",$("#user_id").val());
         $.ajax({
             url: 'http://178.154.255.209:3005/events',
             data: fd,
