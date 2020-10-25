@@ -52,7 +52,7 @@
             </div>
             <div class="row">
                 <div class="col-12 m-auto">
-                    <h2 class="event-name">9 инструментов для группового взаимодействия от Школы тренеров и модераторов</h2>
+                    <h2 class="event-name" id ="event-name" >9 инструментов для группового взаимодействия от Школы тренеров и модераторов</h2>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                             <div id="city">Ростова-на-Дону</div>
                             <div id="address">ул. Красноармейская, д. 23</div>
                         </div>
-                        <div class="event-description">
+                        <div class="event-description" id = "event-description">
                             Как познакомить, сплотить, подружить группу девятью разными способами? Вместе с Колей из Тамбова, Даней из Москвы, Тиграном из Ростова-на-Дону и Кириллом Александровичем из Санкт-Петербурга собрали первый в истории Мастерской управления «Сенеж» модераторский подкаст. Ребята попали в «Сенеж» благодаря своей активности на форуме «Территория смыслов», сегодня они проходят обучение в «Школе тренеров и модераторов». 
                         </div>
                         <div class="event-btns">
@@ -118,6 +118,28 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script >
+        $.ajax({
+        url:"http://178.154.255.209:3005/events/"+id,
+        type:"get",
+        
+        success:function(event){   
+              
+             $("#date").text(event.date);
+             $("#time").text(event.time);
+             $("#city").text(event.location);
+             $("#event-description").val(event.description);             
+             $("#event-name").text(event.name);   
+             $("#add-event").attr("src", "http://178.154.255.209:3005"+event.picture.url);
+             
+        },
+        
+        error:function() {
+        
+        }
+    
+    })
+    </script>
 </body>
 
 </html>
